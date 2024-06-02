@@ -24,7 +24,7 @@
                         <th>Nama</th>
                         <th>Kuantitas</th>
                     </tr>
-                    @foreach ($obat as $obt)
+                    @foreach ($obats as $obt)
                         <tr>
                             <td>{{ $obt->nama}}</td>
                             <td>{{ $obt->kuantitas}}</td>
@@ -36,6 +36,7 @@
                         </tr>
                     @endforeach
                 </table>
+                <a href="{{ url('users/export') }}" class="button">Download Excel</a>
                 <a href="/" class="button">Kembali</a>
             </div>
         </div>

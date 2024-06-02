@@ -18,7 +18,7 @@
         <div class="container">
             <div class="box">
                 <h1 class="large-font">Tambah daftar</h1>
-                @foreach ($obat as $obt)
+                @foreach ($obats as $obt)
                     <form action="/addsave" method="post">
                         {{ csrf_field() }}
                         Nama <input type="text" name="nama" required="required"> <br />

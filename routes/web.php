@@ -15,3 +15,4 @@ Route::post('addsave', [DBController::class,'addsave']);
 Route::get('edit/{nama}', [DBController::class,'edit']);
 Route::post('editsave', [DBController::class,'editsave']);
 Route::get('delete/{nama}', [DBController::class,'delete']);
+Route::get('users/export', [DBController::class,'export']);
